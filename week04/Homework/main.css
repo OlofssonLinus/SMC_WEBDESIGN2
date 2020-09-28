@@ -2,6 +2,10 @@ body {
    margin: 0px; 
 }
 
+img {
+    max-width: 100%;
+}
+
 nav img {
     max-width: 100%;
     width: 150px;
@@ -36,6 +40,11 @@ a {
     flex-direction: column;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 .order-1 {
     order: 3;
 }
@@ -56,6 +65,10 @@ a {
     order: 5;
 }
 
+.grower {
+    flex-grow: 2;
+}
+
 
 @media(min-width: 768px) {
     .flex {
@@ -63,6 +76,15 @@ a {
         justify-content: center;
     }
 
+    img {
+        width: 33.33%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 
     nav img {
         margin-left: 30px;
