@@ -1,0 +1,23 @@
+.orange-bg {
+    background-color: rgb(245, 125, 73);
+}
+
+.blue-bg {
+    background-color: rgb(31, 153, 209);
+}
+
+.grey-bg {
+    background-color: rgb(237, 237, 237);
+}
+
+.grey-tx {
+    color: rgb(36, 36, 36);
+}
+
+.blue-tx {
+    color: rgb(31, 153, 209);
+}
+
+.white-tx {
+    color: rgb(255, 255, 255);
+}
