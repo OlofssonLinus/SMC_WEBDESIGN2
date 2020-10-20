@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Takteknik</title>
+</head>
+<body>
+
+    <header>
+        <nav class="orange-bg">
+
+            <a href="index.html">
+                <img src="assets/logo.png" alt="Taktek-Logo" class="nav-logo">
+            </a>
+                
+            <label for="Toggle">
+                <img src="assets/hamburger.png" alt="Hamburger Menu" class="toggle-img">
+            </label>
+            <input type="checkbox" id="Toggle">
+            <ul>
+                <li><a href="index.html">HEM</a></li>
+                <li><a href="about.html">OM OSS</a></li>
+                <li><a href="contact.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+        <div>
+            <picture>
+                <h1 class="white-tx">
+                    Inga jobb är
+                    <br>
+                    varken för små
+                    <br>
+                    eller för stora
+                </h1>
+                <source media="(min-width: 768px") srcset="assets/header_l.jpg">
+                <img src="assets/header_s.jpg" alt="header">
+            </picture>
+        </div>
+    </header>
+
+    <main class="contact-main">
+
+        <div class="container">
+
+            <form action="action_page.php">
+              <h2 class="grey-tx">Kontakta Oss</h2>
+              <label for="lname">Förnamn</label>
+              <input type="text" id="Fname" name="firstame" placeholder="Förnamn..">
+          
+              <label for="lname">Efternamn</label>
+              <input type="text" id="lname" name="lastname" placeholder="Efternamn..">
+    
+              <label for="lname">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="Din E-mail..">
+             
+              <label for="subject">Ämne</label>
+              <input type="text" id="subject" name="subject" placeholder="Vad gäller ditt meddelande?"> 
+    
+              <label for="message">Meddelande</label>
+              <textarea id="message" name="message" placeholder="Ditt meddelande.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Skicka">
+          
+            </form>
+          </div>
+
+    </main>
+
+    <footer class="grey-bg">
+
+        <div class="footer-info">
+            <div>
+                <h4 class="white-tx">Takteknik AB</h4>
+                <p class="white-tx">
+                    0708250630
+                    <br>
+                    Info@Takteknik.se
+                    <br>
+                    Metallgatan 10, 242 35 Hörby
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-logo">
+            <img src="assets/logo.png" alt="Taktek-Logo">
+        </div>
+
+    </footer>
+    
+</body>
+</html>
