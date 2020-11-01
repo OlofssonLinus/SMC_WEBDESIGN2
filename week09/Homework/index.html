@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Homework</title>
+
+</head>
+<body id="docBody">
+
+    <h1 id="myHeading">Welcome <span id="userName"></span></h1>
+    <img src="https://coverfiles.alphacoders.com/182/18216.jpg">
+
+    <div id="myDiv">
+        <p id="text">
+            If you’re ever lucky enough to meet a Quokka, chances are you’ll break out in a grin. This popular marsupial is synonymous with Perth’s favourite holiday spot, Rottnest Island – a short ferry ride from the Western Australian port of Fremantle. In fact, it’s how the island got its name – Dutch explorer Willem de Vlamingh named it ‘Rotte Nest’ (‘rats’ nest’) in 1696, mistaking the ubiquitous small macropods (the kangaroo and wallaby family) on the beautiful Mediterranean-like island as giant rats.
+
+            Of course the traditional owners of Rottnest Island, the Whadjuk Noongar people, knew of the island long before any European connection. They call it Wadjemup, which means ‘place across the water where the spirits are’. 
+
+            Rottnest wasn't always an island. Noongar people used to walk there during the last ice age around 6,500 years ago when lower sea levels meant it was connected to the mainland. For them it was an important place to meet and conduct ceremonies.
+
+            Around 10,000 Quokkas live on Rottnest Island today. Very small populations also survive in the mainland’s south-west forests such as those near Northcliffe. Overall the species is listed as vulnerable due to predation by feral animals (cats and foxes), altered fire patterns and habitat loss.
+        </p>
+    </div>
+
+    <button href="#" id="textChange">Larger Text</button>
+    <button href="#" id="legallyBlind">Legally Blind</button>
+
+
+    <script>
+
+        let answer = prompt("Enter your name.");
+        console.log(answer);
+        document.getElementById("userName").innerText = answer;
+
+
+
+        let trigButton = document.getElementById("textChange");
+     
+
+        textChange.addEventListener("click", function(){
+
+            let userAnswer = confirm("Are you sure you want to do this?");
+            console.log("userAnswer");
+
+            if(userAnswer == true){
+                text.style.fontSize = "large";
+
+                alert("The changes are now complete");
+            }
+            else {
+                alert("No action will be taken");
+            }
+
+        });
+
+        legallyBlind.addEventListener("click", function(){
+
+            let userAnswer = confirm("Are you sure you want to do this?");
+            console.log("userAnswer");
+
+            if(userAnswer == true){
+                text.style.fontSize = "x-large";
+
+                alert("The changes are now complete");
+            }
+            else {
+                alert("No action will be taken");
+            }
+
+        });
+
+
+
+        
+    </script>
+    
+</body>
+</html>
