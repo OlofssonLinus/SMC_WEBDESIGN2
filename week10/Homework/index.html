@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="main.css" rel="stylesheet">
+
+    <title>Homework</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="assets/Logo.png" alt="Mountain Logo" class="nav-logo">
+           
+            
+            <label for="Toggle">
+                <img src="assets/menuclosed.png" alt="menuclosed" class="toggle-img" id="toggleIMG">
+            </label>
+            <input type="checkbox" id="Toggle">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="row">
+            <div class="column">
+              <img src="assets/mountain1.jpg" alt="mountain1" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="assets/mountain2.jpg" alt="mountain2" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="assets/mountain3.jpg" alt="mountain3" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+              <img src="assets/mountain4.jpg" alt="mountain1" onclick="myFunction(this);">
+            </div>
+          </div>
+
+          <!-- Extracted from w3schools -->
+          <!-- https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp -->
+    
+          <div class="container">
+            
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+          
+            <img id="expandedImg" style="width:100%">
+
+            <div id="imgtext"></div>
+          </div>
+        
+        <script src="script.js"></script>
+    </main>
+
+    
+</body>
+</html>
