@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="carousel">
+        <img src="assets/potato1.jpg" alt="potato1" id="carouselIMG">
+    </div>
+
+    <script>
+        let carousel = document.getElementById("carousel");
+        let carouselIMG = document.getElementById("carouselIMG");
+
+        let images = [
+            "assets/potato1.jpg",
+            "assets/potato2.jpg",
+            "assets/potato3.jpg"
+        ]
+
+
+        let imgChange = function(){
+            if(carouselIMG.alt === "potato1") {
+                carouselIMG.src = images [1];
+                carouselIMG.alt = "potato2";
+            }
+            else if(carouselIMG.alt === "potato2") {
+                carouselIMG.src = images [2];
+                carouselIMG.alt = "potato3";
+            }
+            else if(carouselIMG.alt === "potato3") {
+                carouselIMG.src = images [0];
+                carouselIMG.alt = "potato1";
+            }
+            
+        }
+
+        let subscribeRequest = function(){
+            prompt("Give us your email or else", "my@email.com");
+        }
+
+        window.addEventListener("load", function(){
+            setTimeout(subscribeRequest, 2000);
+            setInterval(imgChange, 3000);
+        })
+
+    </script>
+</body>
+</html>
