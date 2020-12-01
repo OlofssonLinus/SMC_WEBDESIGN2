@@ -17,6 +17,7 @@ button {
 
 #morePuppies, #lessPuppies {
     font-size: 20px;
+    background-color: aquamarine;
 }
 
 .buttons {
@@ -26,4 +27,12 @@ button {
 
 #btnAdd1, #btnAdd2, #btnAdd3, #btnAdd4 {
     margin-bottom: 20px;
+    background-color: green;
+    padding: 10px;
+}
+
+#btnRemove1, #btnRemove2, #btnRemove3, #btnRemove4 {
+    margin-bottom: 20px;
+    background-color: red;
+    padding: 10px;
 }
