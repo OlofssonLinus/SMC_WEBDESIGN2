@@ -1,0 +1,29 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2);
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+img {
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+}
+
+#morePuppies, #lessPuppies {
+    font-size: 20px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#btnAdd1, #btnAdd2, #btnAdd3, #btnAdd4 {
+    margin-bottom: 20px;
+}

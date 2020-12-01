@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Homework</title>
+</head>
+<body>
+    <div class="grid">
+        <img src="https://thetimelessdog.com/wp-content/uploads/2018/12/puppy-training-400x400.jpg" alt="Puppy1" class="js-image1" id="image">
+        <img src="https://i.pinimg.com/474x/8d/45/4b/8d454ba4c1bac41c5f93907a76192af0.jpg" alt="Puppy2" class="js-image2"
+        id="image">
+        <img src="https://lh3.googleusercontent.com/proxy/6qCysNokZz27Th_u6zZteHcP7TOJNtO7devNVFxcVLsFWkpxNTnQo4TMPMwHE-L7i6fjenAco7DKRtsZ70V9ne8Mh-xF9DzQZE849gHinCq0r4MC8sgHrk4n-rOWx0i2LMlC8zc" alt="Puppy3" class="js-image3" id="image">
+        <img src="https://whatagreatdog.com/wp-content/uploads/2020/01/njieEoLW_400x400-400x400.jpg" alt="Puppy4" class="js-image4" id="image">
+
+        
+        <button id="btnRemove1">Remove me :(</button>
+        <button id="btnRemove2">Remove me :(</button>
+        <button id="btnRemove3">Remove me :(</button>
+        <button id="btnRemove4">Remove me :(</button>
+
+        <button id="btnAdd1">Take me back :)</button>
+        <button id="btnAdd2">Take me back :)</button>
+        <button id="btnAdd3">Take me back :)</button>
+        <button id="btnAdd4">Take me back :)</button>
+        
+    </div>
+
+    <div class="buttons">
+    <button id="morePuppies"><strong>More puppies!</strong></button>
+    <button id="lessPuppies"><strong>Less puppies!</strong></button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            // REMOVE
+
+            $("#btnRemove1").click(function(){
+                $(".js-image1").animate({opacity: "0"});
+                $(".js-image1").btnAdd;
+            })
+
+            $("#btnRemove2").click(function(){
+                $(".js-image2").animate({opacity: "0"});
+                $(".js-image2").btnAdd;
+            })
+
+            $("#btnRemove3").click(function(){
+                $(".js-image3").animate({opacity: "0"});
+                $(".js-image3").btnAdd;
+            })
+
+            $("#btnRemove4").click(function(){
+                $(".js-image4").animate({opacity: "0"});
+                $(".js-image4").btnAdd;
+            })
+
+            // ADD
+
+            $("#btnAdd1").click(function(){
+                $(".js-image1").animate({opacity: "1"});
+            })
+
+            $("#btnAdd2").click(function(){
+                $(".js-image2").animate({opacity: "1"});
+            })
+
+            $("#btnAdd3").click(function(){
+                $(".js-image3").animate({opacity: "1"});
+            })
+
+            $("#btnAdd4").click(function(){
+                $(".js-image4").animate({opacity: "1"});
+            })
+
+            $("#morePuppies").click(function(){
+                $(".grid").prepend('<img src="https://thetimelessdog.com/wp-content/uploads/2018/12/puppy-training-400x400.jpg" alt="Puppy1" class="js-image1" id="image"><img src="https://i.pinimg.com/474x/8d/45/4b/8d454ba4c1bac41c5f93907a76192af0.jpg" alt="Puppy2" class="js-image2" id="image"> <img src="https://lh3.googleusercontent.com/proxy/6qCysNokZz27Th_u6zZteHcP7TOJNtO7devNVFxcVLsFWkpxNTnQo4TMPMwHE-L7i6fjenAco7DKRtsZ70V9ne8Mh-xF9DzQZE849gHinCq0r4MC8sgHrk4n-rOWx0i2LMlC8zc" alt="Puppy3" class="js-image3" id="image"> <img src="https://whatagreatdog.com/wp-content/uploads/2020/01/njieEoLW_400x400-400x400.jpg" alt="Puppy4" class="js-image4" id="image">')
+            });
+
+            $("#lessPuppies").click(function(){
+                $(".grid img:first-child, .grid img:nth-child(2), .grid img:nth-child(3), .grid img:nth-child(4)").remove();
+            })
+
+            
+
+    });
+    </script>
+</body>
+</html>
