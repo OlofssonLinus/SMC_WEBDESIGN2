@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="libs/jqueryUI/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <link rel="stylesheet" href="main.css">
+
+    <title>JQueryUI/FancyBox</title>
+</head>
+<body>
+
+    <div id="accordion">
+        <h3>Why is the sky blue?</h3>
+        <div>
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident hic ipsum consequuntur labore sint natus molestias illo temporibus consequatur eveniet. Saepe excepturi adipisci nesciunt modi quo. Sit, ratione tempore. Soluta?</P>
+        </div>
+        <!-- Section 1 end -->
+        <h3>Why is the Earth spherical?</h3>
+        <div>
+            <img src ="https://geology.com/google-earth/google-earth.jpg" alt="Earth">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident hic ipsum consequuntur labore sint natus molestias illo temporibus consequatur eveniet. Saepe excepturi adipisci nesciunt modi quo. Sit, ratione tempore. Soluta? 
+            </p>
+        </div>
+        <!-- Section 2 end -->
+        <h3>Why do bad things happen to good people?</h3>
+        <div>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident hic ipsum consequuntur labore sint natus molestias illo temporibus consequatur eveniet. Saepe excepturi adipisci nesciunt modi quo. Sit, ratione tempore. Soluta?
+            </p>
+        </div>
+        <!-- Section 3 end -->
+    </div>
+    <hr>
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Video</a></li>
+            <li><a href="#tabs-2">Photo</a></li>
+            <li><a href="#tabs-3">Audio</a></li>
+            <li><a href="#tabs-4">Lightning</a></li>
+        </ul>
+
+        <div id="tabs-1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor exercitationem sed sapiente, modi accusamus illum molestiae inventore, temporibus voluptates hic fugiat! Assumenda enim quia corporis, deleniti maxime eveniet voluptatibus. Quos.</p>
+        </div>
+        <div id="tabs-2">
+            <p>
+                Bar  beans americano seasonal, aged strong redeye cream grounds. Java, french press wings, iced doppio foam java breve mazagran. Redeye chicory froth wings brewed robusta cappuccino. Coffee mocha, whipped blue mountain mug instant grounds as spoon.
+
+                Robust ut robusta java, wings macchiato affogato saucer milk. Seasonal cappuccino, in saucer, cream plunger pot aromatic turkish crema. Galão mazagran est single origin froth ut aged. A siphon caffeine aftertaste single shot caffeine robusta.
+            </p>
+        </div>
+        <div id="tabs-3">
+            <p>
+                Pose purrfectly to show my beauty i heard this rumor where the humans are our owners, pfft, what do they know?! fish i must find my red catnip fishy fish and bite the neighbor's bratty kid knock dish off table head butt cant eat out of my own dish so your pillow is now my pet bed naughty running cat. Annoy the old grumpy cat,
+            </p>
+        </div>
+        <div id="tabs-4">
+            <p>
+                The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children.
+            </p>
+        </div> 
+
+    </div>
+    <hr>
+
+    <div id="earthquake">
+        <img src="https://roadmap2050.report/static/files/photo-building.jpg" alt="building">
+    </div>
+
+    <hr>
+    <div id="fB-imgs">
+        <a href="imgs/big1.jpg" data-fancybox="gallery" data-caption="Quokka 1">
+            <img src="imgs/small1.jpg" alt="Thumbnail 1">
+        </a>
+
+        <a href="imgs/big2.jpg" data-fancybox="gallery" data-caption="Quokka 1">
+            <img src="imgs/small2.jpg" alt="Thumbnail 2">
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+    <script src="libs/jqueryUI/jquery-ui.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#accordion").accordion({
+                heightStyle: "content"
+            });
+
+            $("#tabs").tabs();
+
+            $("#earthquake").click(function(){
+                $("#earthquake").effect("shake", {}, 1500, aftermath);
+            })
+
+            function aftermath (){
+                $("#earthquake img").attr({
+                    src: "https://cdn.staticneo.com/mg/2008/12/db_sap01_ca000507_p3_display.jpg"
+                })
+            }
+    
+        })
+    </script>
+</body>
+</html>
