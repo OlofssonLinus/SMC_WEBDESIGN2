@@ -25,6 +25,7 @@
                 <li><a href="index.html">Hem</a></li>
                 <li><a href="about.html">om oss</a></li>
                 <li><a href="blog.html">blogg</a></li>
+                <li><a href="adopt.html">Adoptera</a></li>
                 <li><a href="donate.html" class="li-donate">donera</a></li>
             </ul>
 
@@ -45,61 +46,53 @@
         <h1>Djurens Vänner</h1>
     </div>
 
-    <h2>- Vi uppskattar alla gåvor, stora som små -</h2>
+    <h2>- Vi uppskattar alla gåvor  -
+        <br>
+        Stora som små</h2>
     <p class="center-text">
         Att driva en ideell förening för djur som har det svårt är mycket kostsamt, men tack vare generösa gåvor och arv klarar vi att driva verksamheten vidare.
         Föreningen är mycket tacksam för alla gåvor och arv som kommer in, stora som små. Tack vare dessa och våra eldsjälar kan vi driva vårt viktiga arbete vidare!
     </p>
 
-    <main>
+    <main class="donate-main">
 
-        <div class="grid-item" id="house">
-            <picture>
-                <source media="(min-width: 768px") srcset="assets/main/home-large.jpg">
-                <img src="assets/main/home-small.jpg" alt="DV Animal Home">
-            </picture>
-        </div>
+        <div>
 
-        <h3 class="grid-item">Välkommen till Djurens Vänner!</h2>
+            <form action="action_page.php">
 
-        <p class="grid-item">
-            Välkommen till Djurens Vänners enda lokalförening i Skåne! Vi är en av 17 lokalföreningar inom Djurens Vänner i Sverige. Här på hemsidan kan du läsa mer om vår organisation, hur du ska gå till väga vid adoptering, samt donera pengar till oss för forsatt välmående hos våra hemlösa djur. Organisationen sköts helt och hållet ideelt.
-        </p>
+              <h3>Personlig information</h3>
 
-        <h3 class="grid-item">Föreningens djurhem</h3>
+              <label for="lname">Förnamn</label>
+              <input type="text" id="Fname" name="firstame" placeholder="Förnamn..">
+          
+              <label for="lname">Efternamn</label>
+              <input type="text" id="lname" name="lastname" placeholder="Efternamn..">
+    
+              <label for="lname">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="Din E-mail..">
 
-        <p class>
-            Gården, som ligger i Kyrkheddinge utanför Staffanstorp, bestod från början av två långa stallbyggnader samt ett separat bostadshus. Det har legat mycket hårt arbete om många timmars arbete både från föreningens entusiaster och olika byggfirmor för att nå fram. Men vi kan nu stolta visa upp ett mycket fint och välplanerat djurhem.
-        </p>
+              <h3>Betalning</h3>
+            
+            <div class="buttons">
+            <input type="button" value="50kr">
+            <input type="button" value="100kr">
+            <input type="button" value="500kr">
+            <input type="button" value="1000kr">
+            </div>
 
-        <h3 class="grid-item">Syfte</h3>
-        <p class="grid-item">
-            Djurhemmets syfte är att ta emot hemlösa och övergivna djur för att sedan hitta nya bra hem till dem. Innan djuren placeras ses de över så att de är friska och har de vaccinationer som behövs. Alla katter och kaniner kastreras även innan placering. Vi tror innerligt att alla djur förtjänar ett eget hem där de kan trivas.
-        </p>
+            <input type="text" class="form-input" placeholder="Namn på kortet">
 
-        <h3 class="grid-item">Öppet hus</h3>
-        <p class="grid-item">
-            Djurhemmet är också en möjlighet för föreningen att visa upp sin verksamhet och sprida information om djur och djurhållning. Öppet Hus hålls året runt för besökare, men även andra evenemang förekommer. Loppmarknader, Djurens Dag och olika föreläsningar är exempel på sådana evenemang.
-        </p>
+            <input type="text" class="form-input" placeholder="kortnummer">
 
-        <h3 class="grid-item">Avdelningar: Hundar</h3>
-        <p class="grid-item">
-            Hundarnas del är indelad i två olika avdelningar, där samtliga kan ges möjlighet att gå ut i separata utegårdar i olika storlekar beroende på ras och antalet hundar som sitter tillsammans. Även hundarna har en separat avdelning som är tänkt att kunna ge en tik och hennes valpar avskildhet från de andra hundarna på djurhemmet.
-            Det finns även ett hundbad där hundarna kan få ett bad som så skulle vara nödvändigt
-        </p>
+            <input type="text"  class="form-input" placeholder="Utgångsdatum                                                                   MM/ÅÅ" style="width:59%">
 
-        <h3 class="grid-item">Avdelningar: Katter</h3>
-        <p class="grid-item">
-            På katternas avdelning finns en separat karantän där alla katter får vistas de första veckorna på djurhemmet. Efter det får de flytta in i en av de två kattavdelningarna, där de bor i väntan på ett nytt hem. Katterna har tillgång till att gå ut i uteboxar både när de bor i karantänen och när de flyttats vidare. Här kan de kan njuta av solen och den friska lantluften! Det finns även ett speciellt rum för mammor med ungar. 
-        </p>
+            <input type="text"  class="form-input" placeholder="CVV / CVC" style="width:40%">
+              
+            <input type="submit" value="Skicka">
+          
+            </form>
 
     </main>
-
-    <h2 class="donate-button"><a href="donate.html">Donera</a></h2>
-    <p class="center-text">
-        Att driva en ideell förening för djur som har det svårt är mycket kostsamt, men tack vare generösa gåvor och arv klarar vi att driva verksamheten vidare.
-        Föreningen är mycket tacksam för alla gåvor och arv som kommer in, stora som små. Tack vare dessa och våra eldsjälar kan vi driva vårt viktiga arbete vidare!
-    </p>
 
 <footer>
 

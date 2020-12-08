@@ -42,7 +42,7 @@ h2 {
     font-size: 20px;
     text-align: center;
     color: rgb(36, 36, 36);
-
+    line-height: 40px;
 }
 
 
@@ -195,13 +195,14 @@ footer {
     width: 100px;
     margin: auto;
     border-radius: 40px;
-    padding: 10px;
+    padding: 5px;
     margin-top: 80px;
 }
 
 .donate-button a {
     color: white;
     text-decoration: none;
+    font-size: 20px;
 }
 
 .donate-button:hover {
@@ -234,6 +235,96 @@ footer {
 }
 
 
+
+
+/* DONATE */
+
+
+
+
+.donate-main h2 {
+    margin: 0px 30px 40px 0px;
+  }
+
+  .donate-main {
+    display: inline;
+    margin: auto;
+}
+
+form {
+    width: 90%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
+
+  input[type=text], input[type=email], select, textarea {
+    width: 100%; 
+    padding: 12px;  
+    border: 1px solid #ccc;    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 25px; 
+    resize: vertical;
+    font-family: 'Fira Sans', sans-serif;
+  }
+  
+  input[type=submit] {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+
+  input[type=button] {
+    background-color: white;
+    color: rgb(36, 36, 36);
+    padding: 12px 20px;
+    border: 2px solid rgb(36, 36, 36);
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 10px;
+    }
+
+    input[type=button]:active {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    }
+    
+    input[type=submit]:hover {
+        opacity: .7;
+    }
+
+    .donate-main h3 {
+        text-align: center;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    label {
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 600;
+    }
+
+    .buttons {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+
+
   
 @media(min-width: 768px) {
 
@@ -256,10 +347,6 @@ footer {
     .banner-text {
         top: -55px;
         padding: 2px 30px;
-    }
-
-    .contact-main h2 {
-        margin-bottom: 60px;
     }
 
     form {
@@ -458,6 +545,18 @@ footer {
 
     .blog-grid-item:nth-child(12) {
         margin-bottom: 0px;
+    }
+
+
+    /* DONATE  */
+
+    .donate-main h2 {
+        margin-bottom: 60px;
+    }
+
+    input[type=button] {
+        margin: 22px;
+        margin-top: 10px;
     }
 
 
