@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Home</title>
+</head>
+<body>
+
+    <header>
+
+        <nav>
+
+            <a href="index.html">
+            <img src="assets/logo.png" alt="DV-logo" class="nav-logo">
+            </a>
+                
+            <label for="Toggle">
+                <img src="assets/hamburger.png" alt="Toggle Icon" class="toggle-img">
+            </label>
+            <input type="checkbox" id="Toggle">
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="about.html">om oss</a></li>
+                <li><a href="blog.html">blogg</a></li>
+                <li><a href="adopt.html">Adoptera</a></li>
+                <li><a href="donate.html" class="li-donate">donera</a></li>
+            </ul>
+
+        </nav>
+
+        <div>
+            <picture>
+
+                <source media="(min-width: 768px") srcset="assets/banner-large.jpg" alt="Puppies">
+                <img src="assets/banner-small.jpg" alt="Puppies">
+
+            </picture>
+        </div>
+        
+    </header>
+    <div class="banner-text">
+        <h1>Djurens Vänner</h1>
+    </div>
+
+    <h2>- Om Djurens Vänner -</h2>
+    <p class="center-text">
+        <strong>Öppettider:</strong>
+        <br>
+        Måndag - Fredag: 09.00 - 18.00
+        <br>
+        <strong>Adress:</strong>
+        <br>
+        Flintevångsvägen 233, 24592 - Staffanstorp
+        <br>
+        <strong>Tel:</strong>
+        <br>
+        040-12 60 00
+    </p>
+
+    <main class="about-main">
+
+        <div class="about-grid-item">
+            <picture>
+                <source media="(min-width: 768px") srcset="assets/about/about1-large.jpg">
+                <img src="assets/about/about1-small.jpg" alt="DV Facility">
+            </picture>
+        </div>
+
+        <div class="about-grid-item">
+        <h3>Vår historia</h3>
+            <p>
+                Föreningarna Djurens Vänners Riksorganisation är en sammanslutning av inom landet verksamma djurskyddsföreningar bärande namnet “Djurens Vänner”. De första tre Djurens Vänner föreningarna bildades i Malmö, Helsingborg och Göteborg år 1952. Dessa följdes av flera föreningar, som gick samman i en organisation – Föreningarna Djurens Vänners Riksorganisation – som bildades i Örebro den 8 juni 1957. Riksorganisationen har till ändamål att arbeta för samverkan mellan de anslutna föreningarna, vilka alla verkar för ett realistiskt djurskydd och efter ett av Riksorganisationens årsmöte fastställt principprogram.
+            </p>
+
+        <h3>Nu och då</h3>    
+            <p>
+                Mycket har förändrats sedan 1957 och hel del har blivit bättre. Men det är intressant att läsa följande citat redan i detta första officiella protokoll som skrevs: ”Den eviga frågan, vad som skall göras och kan göras för alla de bortkomna och förvildade katterna i våra städer, upptogs till diskussion. Mötet enade sig om att hemställa till alla Djurens Vänners – föreningar, var och en på sin plats, att försöka lösa denna fråga ”Detta sades den 8 juni 1957! Har någon förening, organisation eller myndighet kunnat lösa denna fråga idag, nästan 60 år senare…?
+            </p>
+        </div>
+    
+        <div class="about-grid-item">
+        <h3>Styrelse</h2>
+
+            <!-- A WHOLE LOTTA BRAKES (I know I could put them in separate paragraphs) -->
+
+            <p>
+                <strong>Ordförande</strong>
+                <br>
+                Fredrik Malmgren, Skåne
+                <br>
+                fredrik.malmgren@djurensvanner.se
+                <br>
+                Tel: 0708-12 60 88
+                <br>
+                <br>
+                <strong>Ordförande</strong>
+                <br>
+                Solveig Gavik, Göteborg
+                <br>
+                Tel: 0705-68 94 14
+                <br>
+                <br>
+                <strong>Sekreterare</strong>
+                <br>
+                Annica Sjöberg, Nässjö
+                <br>
+                Tel: 0732-03 39 59
+                <br>
+                <br>
+                <strong>Kassör</strong>
+                <br>
+                vakant
+                <br>
+                <br>
+                <strong>Ledamöter</strong>
+                <br>
+                Lil Banås-Holmberg, Göteborg
+                <br>
+                Pia Lindkvist, Växjö
+                <br>
+                <br>
+                <strong>Suppleanter</strong>
+                <br>
+                Charlotte Holmqvist, Jönköping
+            </p>
+        </div>
+
+
+    </main>
+
+    <h2 class="donate-button" id="fadeToggle">Kontakt</h2>
+
+    <div class="contact-form">
+
+        <form action="action_page.php">
+
+          <label for="lname">Förnamn</label>
+          <input type="text" id="Fname" name="firstame" placeholder="Ditt förnamn..">
+      
+          <label for="lname">Efternamn</label>
+          <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn..">
+
+          <label for="lname">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Din E-mail..">
+
+          <label for="message">Meddelande</label>
+          <textarea id="message" name="message" placeholder="Ditt meddelande.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Skicka">
+
+        </form>
+        
+    </div>
+
+<footer>
+
+    <div class="footer-info">
+        <div>
+            <h4>Djurens Vänner Skåne</h4>
+            <p>
+                <a href="tel:040-12 60 00">040-12 60 00</a>
+                <br>
+                <a href="mailto:skane@djurensvanner.se">skane@djurensvanner.se</a>
+                <br>
+                <a href="https://www.google.com/maps/place/Flintev%C3%A5ngsv%C3%A4gen+233,+245+92+Staffanstorp/@55.6372206,13.2663628,17z/data=!3m1!4b1!4m5!3m4!1s0x4653998c753d626d:0x9c36c07d380aee77!8m2!3d55.6372206!4d13.2685515" a target=”_blank”>Flintevångsvägen 233, 24592 - Staffanstorp</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="footer-logo">
+        <img src="assets/logo.png" alt="DV-logo">
+    </div>
+
+    <div class="socialmedia">
+        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdjurensvanner.se%2F&text=Missa%20inte%20%C3%85rets%20Kattparad!%20" a target="blank_">
+            <img src="assets/icon1.png" alt="Twitter Icon">
+        </a>
+        <a href="https://www.facebook.com/djurensvannerskane" a target="blank_">
+         <img src="assets/icon2.png" alt="Facebook Icon">
+        </a>
+    </div>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#fadeToggle").click(function(){
+            $(".contact-form form").fadeToggle(500);
+        })
+
+    });
+</script>
+    
+</body>
+</html>

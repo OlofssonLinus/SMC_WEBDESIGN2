@@ -36,7 +36,6 @@
 
                 <source media="(min-width: 768px") srcset="assets/banner-large.jpg" alt="Puppies">
                 <img src="assets/banner-small.jpg" alt="Puppies">
-                <h1 class="white-tx">
 
             </picture>
         </div>
@@ -54,6 +53,14 @@
         Föreningen är mycket tacksam för alla gåvor och arv som kommer in, stora som små. Tack vare dessa och våra eldsjälar kan vi driva vårt viktiga arbete vidare!
     </p>
 
+    <div id="thankYou">
+    <picture>
+        <source media="(min-width: 768px") srcset="assets/donate/kitten-large.jpg">
+        <img src="assets/donate/kitten-large.jpg" alt="Kitten Heart">
+    </picture>
+    <h2>Tack för din generösa gåva!</h2>
+    </div>
+
     <main class="donate-main">
 
         <div>
@@ -63,57 +70,78 @@
               <h3>Personlig information</h3>
 
               <label for="lname">Förnamn</label>
-              <input type="text" id="Fname" name="firstame" placeholder="Förnamn..">
+              <input type="text" id="Fname" name="firstame" placeholder="Ditt förnamn..">
           
               <label for="lname">Efternamn</label>
-              <input type="text" id="lname" name="lastname" placeholder="Efternamn..">
+              <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn..">
     
               <label for="lname">E-mail</label>
               <input type="email" id="email" name="email" placeholder="Din E-mail..">
 
               <h3>Betalning</h3>
-            
-            <div class="buttons">
-            <input type="button" value="50kr">
-            <input type="button" value="100kr">
-            <input type="button" value="500kr">
-            <input type="button" value="1000kr">
-            </div>
-
+        
             <input type="text" class="form-input" placeholder="Namn på kortet">
 
             <input type="text" class="form-input" placeholder="kortnummer">
 
-            <input type="text"  class="form-input" placeholder="Utgångsdatum                                                                   MM/ÅÅ" style="width:59%">
+            <input type="text"  class="form-input" placeholder="Utgångsdatum" style="width:58%"> 
 
-            <input type="text"  class="form-input" placeholder="CVV / CVC" style="width:40%">
+            <input type="text"  class="form-input" placeholder="CVV/CVC" style="width:40%">
+
+            <input type="text" class="form-input" placeholder="Summa (kr)">
               
-            <input type="submit" value="Skicka">
+            <input type="submit" value="Skicka" id="submitButton">
           
             </form>
+            
+        </div>
 
     </main>
 
-<footer>
+    <footer>
 
-    <div class="footer-info">
-        <div>
-            <h4 class="white-tx">Djurens Vänner Skåne</h4>
-            <p class="white-tx">
-                <a href="tel:040-12 60 00">040-12 60 00</a>
-                <br>
-                <a href="mailto:skane@djurensvanner.se">skane@djurensvanner.se</a>
-                <br>
-                <a href="https://www.google.com/maps/place/Flintev%C3%A5ngsv%C3%A4gen+233,+245+92+Staffanstorp/@55.6372206,13.2663628,17z/data=!3m1!4b1!4m5!3m4!1s0x4653998c753d626d:0x9c36c07d380aee77!8m2!3d55.6372206!4d13.2685515" a target=”_blank”>Flintevångsvägen 233, 24592 - Staffanstorp</a>
-            </p>
+        <div class="footer-info">
+            <div>
+                <h4>Djurens Vänner Skåne</h4>
+                <p>
+                    <a href="tel:040-12 60 00">040-12 60 00</a>
+                    <br>
+                    <a href="mailto:skane@djurensvanner.se">skane@djurensvanner.se</a>
+                    <br>
+                    <a href="https://www.google.com/maps/place/Flintev%C3%A5ngsv%C3%A4gen+233,+245+92+Staffanstorp/@55.6372206,13.2663628,17z/data=!3m1!4b1!4m5!3m4!1s0x4653998c753d626d:0x9c36c07d380aee77!8m2!3d55.6372206!4d13.2685515" a target=”_blank”>Flintevångsvägen 233, 24592 - Staffanstorp</a>
+                </p>
+            </div>
         </div>
-    </div>
+        
+        <div class="footer-logo">
+            <img src="assets/logo.png" alt="DV-logo">
+        </div>
+        
+        <div class="socialmedia">
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdjurensvanner.se%2F&text=Missa%20inte%20%C3%85rets%20Kattparad!%20" a target="blank_">
+                <img src="assets/icon1.png" alt="Twitter Icon">
+            </a>
+            <a href="https://www.facebook.com/djurensvannerskane" a target="blank_">
+            <img src="assets/icon2.png" alt="Facebook Icon">
+            </a>
+        </div>
+        
+    </footer>
 
-    <div class="footer-logo">
-        <img src="assets/logo.png" alt="JV-logo">
-    </div>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 
-</footer>
+<script>
+    $('form').submit(function(event){ event.preventDefault(); });
+
+    $(document).ready(function(){
+        $("#submitButton").click(function(){
+            $("form").fadeToggle(500);
+            $("#thankYou").fadeToggle(500);
+        
+        })
+
+    });
+</script>
     
 </body>
 </html>
